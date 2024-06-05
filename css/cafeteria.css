@@ -1,6 +1,9 @@
+/* Importando as fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Calligraffitti&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
 /* Zerar as margens de todos os elementos da página.
  Margens externas e internas */
-*{
+ *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
@@ -8,10 +11,71 @@
 
 /* Vamos adicionar uma imagem ao fundo header */
 header{
-    background-image: url("../img/caferia4.jpg");
+    background-image: url("../img/cafezao4\ \(1\).jpg");
+    /* Ajustar o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* Ajustar a posição da imagem em x e y */
+    background-position: 0px -810px;
+
     height: 500px;
+    padding: 30px;
+    
+}
+
+nav{
+    /* Tornando o conteúdo do nav flexivel. Isso permite que
+    os elemetos fiquem um ao ladodo outro */
+    display: flex;
+    /* Alinhamento vertical dos elementos que estão no nav */
+    align-items: center;
 }
 
 h1{
+    /* Mudar a cor da letra */
+    color: rgb(168, 40, 40);
+    /* Alterar o tipo de letra */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Tamanho da fonte */
+    font-size: 30pt;
+    /* Alterar o tamanho da caixa(alta ou baixa) */
+    text-transform: lowercase;
+    margin-right: 700px;
+    
+
+}
+
+ul{
+
+    /* Retirr o marcador da lista */
+    list-style: none;
+}
+
+header ul li{
+    /* Vamos ajustar a disposição (display)
+     dos itens da lista em formato de linha  */
+     display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+header ul li:hover{
+    background-color:#ffab00;
+}
+
+header ul li a{
     color: white;
+    /* Vamos retirar o underline(sublinhado) */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h2{
+    color:#e65100 ;
+    text-align: center;
+    margin-top: 160px;
+    font-family: "Kanit", sans-serif;
+    font-size: 20pt;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px #929292;
 }
