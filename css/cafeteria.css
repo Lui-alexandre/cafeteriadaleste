@@ -61,6 +61,8 @@ header ul li{
 
 header ul li:hover{
     background-color:#ffab00;
+    transition: 1s;
+    
 }
 
 header ul li a{
