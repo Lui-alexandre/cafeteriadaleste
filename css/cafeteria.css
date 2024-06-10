@@ -32,7 +32,7 @@ nav{
 
 h1{
     /* Mudar a cor da letra */
-    color: rgb(168, 40, 40);
+    color: #ff9955;
     /* Alterar o tipo de letra */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* Tamanho da fonte */
@@ -74,9 +74,9 @@ header ul li a{
 }
 
 header h2{
-    color:#e65100 ;
+    color:#ff9955 ;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 150px;
     font-family: "EB Garamond", sans-serif;
     font-size: 30pt;
     font-weight: 300;
@@ -123,7 +123,7 @@ main h2{
     font-family: "EB Garamond", sans-serif;
     margin: 50px;
     font-size: 50pt;
-    color: rgb(168, 40, 40);
+    color: #ff9955;
 }
 
 main #home p{
@@ -161,7 +161,7 @@ main #imghome img{
     60% de opacidade. Isto representa 
     60% de visibilidade. */
 
-    opacity: 0.4;
+    opacity: 0.6;
     /* O comando transition pode realizar
     uma animação de transição, que você pode 
     configurar o tipo de transição e o tempo de transição*/
@@ -177,3 +177,48 @@ main #imghome img:hover{
 main #imghome{
     text-align: center;
 }
+
+/*  --------------- Formatação da página cárdapio ------------------- */
+
+main #categoriacardapio{
+    width: 80%;
+    /* Vamos centralizar a caixa 
+    categoria modificando a margem
+     da esquerda e da direita. */
+
+    margin-left: auto;
+    margin-right: auto;
+    /* Aplicar a pisposição flex para
+    deixar as imagens uma ao lado da
+    outra. */
+    display: flex;
+    /* Alinhas o conteúdo ao centro */
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+
+}
+
+.itemcardapio img{
+    /* Tamanho das imagens */
+    width: 150px;
+    height: 150px;
+    /* O que arredonda a imagem */
+    border-radius: 50%;
+    /* Transforma a imagem em bloco */
+    display: block;
+    box-shadow: 0px 0px 10px #ff9955;
+    margin-bottom: 15px;
+}
+
+.itemcardapio{
+    text-align: center;
+    margin: 20px;
+}
+
+.itemcardapio a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
