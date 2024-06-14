@@ -1,224 +1,321 @@
-/* Importando as fontes do Google */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-/* Zerar as margens de todos os elementos da página.
- Margens externas e internas */
- @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
- *{
+/* Importando as fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+
+/* Zerar as margens de todos os elementos 
+da página. Margens externas e internas */
+*{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
 }
 
-/* Vamos adicionar uma imagem ao fundo header */
+
+/* Vamos adicionar uma imagem ao fundo do header */
 header{
-    background-image: url("../img/cafezao4\ \(1\).jpg");
+    background-image: url("../img/fundo1.jpg");
     /* Ajustar o tamanho da imagem em 100% de largura */
     background-size: 100%;
     /* Ajustar a posição da imagem em x e y */
-    background-position: 0px -810px;
-
-    height: 600px;
+    background-position: 0px -150px;
+    height: 500px;
     padding: 30px;
-    
+
 }
 
 nav{
-    /* Tornando o conteúdo do nav flexivel. Isso permite que
-    os elemetos fiquem um ao ladodo outro */
+    /* tornando o conteúdo da nav flexível. Isso permite que 
+    os elementos fiquem um ao lado do outro */
     display: flex;
     /* Alinhamento vertical dos elementos que estão no nav */
     align-items: center;
 }
 
+
 h1{
     /* Mudar a cor da letra */
-    color: #ff9955;
+    color:white;
     /* Alterar o tipo de letra */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* Tamanho da fonte */
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30pt;
     /* Alterar o tamanho da caixa(alta ou baixa) */
-    text-transform: lowercase;
-    margin-right: 700px;
-    
+    text-transform: capitalize;
+    margin-right: 100px;
 
 }
-
 ul{
-
-    /* Retirr o marcador da lista */
+    /* retirar o marcador da lista */
     list-style: none;
 }
-
 header ul li{
-    /* Vamos ajustar a disposição (display)
-     dos itens da lista em formato de linha  */
-     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
+    /* Vamos ajustar a disposição(display)
+    dos itens da lista em formato de linha */
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:5px;
 }
-
 header ul li:hover{
-    background-color:#ffab00;
-    transition: 1s;
-    border-radius: 20px;
-
+    background-color: #ff3d00;
 }
-
 header ul li a{
-    color: white;
-    /* Vamos retirar o underline(sublinhado) */
+    color:white;
+    /* vamos retirar o underline(sublinhado) */
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 header h2{
-    color:#ff9955 ;
-    text-align: center;
-    margin-top: 150px;
-    font-family: "EB Garamond", sans-serif;
-    font-size: 30pt;
-    font-weight: 300;
-    text-shadow: 0px 0px 5px rgb(161, 138, 138);
-}
-
-header p{
-    font-family: "Lora", sans-serif;
-    font-size: 10pt;
     color: white;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 30px;
+    margin-top: 200px;
+    font-family: "Lobster", sans-serif;
+    font-size:30pt;
+    font-weight: 100;
     text-shadow: 0px 0px 5px black;
-        
+}
+header p{
+    font-family: "Kalam", cursive;
+    font-size: 18pt;
+    color:white;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-shadow: 0px 0px 5px black;
 }
 
 footer{
-    background-color: #ff9955;
+    background-color:#455a64;
     display: flex;
     justify-content: space-between;
     padding: 50px;
 
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13pt;
-    color: black;
+    padding-top:100px;
+    padding-bottom:100px ;
+    
+    font-family: arial;
+    font-size: 15pt;
+    color:#fff;
 }
 
-
 footer #rede li{
-    /* Colocar as redes na horizontal */
+    /* colocar as redes em linha */
     display: inline-block;
-    margin-left: 10px;
     margin-right: 10px;
 }
 
-/* ----------- Formatação da página index ------------ */
-
+/* ---------------  formatação da página index --------------- */
 main h2{
-    font-family: "EB Garamond", sans-serif;
-    margin: 50px;
-    font-size: 50pt;
-    color: #ff9955;
+    font-family: "Lobster", sans-serif;
+    margin:50px;
+    font-size: 20pt;
+    color: rgb(207, 28, 22);
 }
 
 main #home p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    text-align: justify; /* Alinhar dos dois lados*/
+    font-family: arial;
+    margin: 0px 50px 30px 50px;
+    text-align: justify;/*alinhar dos dois lados*/
     font-size: 12pt;
-
-    /* O comando line-height define a altura da
-    linha (espaço entre linhas). Estamos
+    /* O comando line-height define a altura da 
+    linha(espaçamento entre linhas). Estamos
     usando uma altura de 1,5, ou seja, o tamanho
     da fonte mais meio do tamanho da fonte */
-
-    line-height: 18pt;
+    line-height: 18pt ;
 }
 
-
 main #imghome img{
-    margin: 50px;
-    width: 350px;
-    height: 350px;
-
-    /* Arredondar os cantos da imagem */
-
-    border-radius: 200px;
-
-    /* vamos aplicar um efeito 
-    de transparência a imagem, usando 
-    o comando opacity que varia entre 
-    0 e 1, ou seja, se você aplicar 
-    0.6, significa qe está usando 
-    60% de opacidade. Isto representa 
-    60% de visibilidade. */
-
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    /* arredondar os cantos da imagem */
+    border-radius: 50%;
+    /* Vamos aplicar um efeito de 
+    transparência a imagem, usando
+    o comando opacity que varia entre
+    0 e 1, ou seja, se você aplicar
+    0.6, significa que está usando
+    60% de opacidade. Isto representa
+    60% de visibilidade */
     opacity: 0.6;
-    /* O comando transition pode realizar
-    uma animação de transição, que você pode 
-    configurar o tipo de transição e o tempo de transição*/
-
+    /* O comando transition pode realizar uma 
+    animação de transição, que você pode
+    configurar o tipo de transição e o 
+    tempo da transição */
     transition: ease 1s;
+
 }
 
 main #imghome img:hover{
     opacity: 1;
-    border-radius: 25px;
 }
 
 main #imghome{
     text-align: center;
 }
 
-/*  --------------- Formatação da página cárdapio ------------------- */
-
+/* -------------------- formatação da página cardapio -------------- */
 main #categoriacardapio{
     width: 80%;
-    /* Vamos centralizar a caixa 
-    categoria modificando a margem
-     da esquerda e da direita. */
-
+    /* vamos centralizar a caixa categoria
+    modificando a margem da esquerda e da 
+    direita como auto de automático */
     margin-left: auto;
     margin-right: auto;
-    /* Aplicar a pisposição flex para
-    deixar as imagens uma ao lado da
-    outra. */
+    /* aplicar a disposição flex para 
+    deixar as imagens uma ao lado da outra */
     display: flex;
-    /* Alinhas o conteúdo ao centro */
+    /* alinhar o conteudo ao centro */
     justify-content: center;
-    align-items: center;
-    margin-top: -70px;
-
+    margin-top: -50px;
 }
 
 .itemcardapio img{
-    /* Tamanho das imagens */
     width: 150px;
     height: 150px;
-    /* O que arredonda a imagem */
-    border-radius: 50%;
-    /* Transforma a imagem em bloco */
+    border-radius:50%;
     display: block;
-    box-shadow: 0px 0px 10px #ff9955;
-    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px red;
+    margin-bottom: 5px;
+   
 }
 
 .itemcardapio{
     text-align: center;
-    margin: 20px;
+    margin:5px
 }
 
 .itemcardapio a{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: arial;
     text-decoration: none;
-    color: black;
+    color:black;
 }
 
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.item{
+    width: 31%;
+    display: flex;
+    margin: 10px;
+}
+
+.item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.item div h3 {
+    font-family: arial;
+    font-size:12pt;
+    margin:5px;
+}
+.item div p{
+    font-family: arial;
+    margin: 5px;
+    font-size: 10pt;
+    line-height: 15pt;
+}
+
+#cafes h2{
+    font-size:40pt;
+    margin-left: 200px;
+}
+
+
+/* ------------------ página quem somos ----------------------- */
+
+main p{
+    font-family: Arial;
+    font-size: 10pt;
+    line-height: 20pt;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#video{
+    text-align: center;
+}
+
+#video iframe{
+    width: 80%;
+    height: 400px;
+    margin:50px;
+}
+
+#mapa{
+    text-align: center;
+}
+
+#mapa iframe{
+    width: 92%;
+    height: 600px;
+    margin: 50px;
+}
+
+/* ------------- Contato -------------- */
+
+form{
+    /*     border:4px solid red;  */
+    width: 40%;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow: 0px 10px 5px sienna;
+}
+
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border-radius: 15px; */
+    border: 0;
+    /* Retira a borda ativa do input */
+    outline: none;
+    border-bottom: 2px dotted sienna;
+
+}
+
+select{
+    width: 50%;
+}
+
+textarea{
+    width: 75%;
+    height: 100px;
+    outline-color: greenyellow;
+    /* Bloqueia o redimensionamento do textarea */
+    resize: none;
+}
+
+form spam{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+input[type=submit]{
+    padding: 10px 30px;
+    border: 0;
+    background-color: chocolate;
+    /* Mouse vira uma mão (apontador) */
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 50px auto;
+}
